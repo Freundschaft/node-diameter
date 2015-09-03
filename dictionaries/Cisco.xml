@@ -4,6 +4,10 @@
 	<command name="Re-Auth" code="258" vendor-id="None"/>
 	<command name="Credit-Control" code="272" vendor-id="None"/>
 
+	<avp name="CTM-radius-diameter-coorelation-id" code="25" mandatory="may" may-encrypt="yes" protected="may" vendor-bit="must" vendor-id="connectem">
+		<type type-name="OctetString"/>
+	</avp>
+
 	<!-- ************************* DCCA AVPs ************************ -->
 	<!-- This list is not complete yet -->
 	<avp name="CC-Correlation-Id" code="411" mandatory="may" may-encrypt="yes" protected="may" vendor-bit="mustnot">
