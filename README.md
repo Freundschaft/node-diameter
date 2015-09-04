@@ -1,7 +1,10 @@
 # node-diameter
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/node-diameter/node-diameter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/node-diameter/node-diameter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![npm version](https://badge.fury.io/js/diameter.svg)](http://badge.fury.io/js/diameter)
+[![Build Status](https://travis-ci.org/node-diameter/node-diameter.svg?branch=master)](https://travis-ci.org/node-diameter/node-diameter)
 [![Code Climate](https://codeclimate.com/github/node-diameter/node-diameter/badges/gpa.svg)](https://codeclimate.com/github/node-diameter/node-diameter)
+[![Test Coverage](https://codeclimate.com/github/node-diameter/node-diameter/badges/coverage.svg)](https://codeclimate.com/github/node-diameter/node-diameter/coverage)
 
 node-diameter is node.js implementation of Base Diameter protocol. 
 
@@ -29,5 +32,6 @@ $ npm run-script example-client
 
 ## Dictionary
 
-node-diameter will use dictionaries you put in 'dictionaries' directory, in Wireshark xml format. On first launch, it will parse XML files, and store the dictionary in 'dictionary.json', in LokiJS database. 
+node-diameter uses the dictionary stored in 'dictionary.json', which is a LokiJS database. You can generate this database from Wireshark style dictionary XML files with:
 
+https://github.com/node-diameter/node-diameter-dictionary-parser
